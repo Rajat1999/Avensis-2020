@@ -1,0 +1,40 @@
+ /* ============================================||   Particle Effect  ||============================================ */
+
+ #fullscreen {
+
+     /* background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0)); */
+     background-size: cover;
+     background-position: center;
+     height: 100vh;
+
+ }
+
+ #fullscreen h1 {
+
+     font-size: 50px;
+     position: absolute;
+     top: 270px;
+     left: 500px;
+     font-weight: 200;
+     color: aquamarine;
+ }
+
+ #particles-js {
+
+     height: 100vh;
+     opacity: 0.6;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0));
+     background-size: cover;
+     background-position: center;
+
+ }
+
+ #particles-js h1 {
+
+     font-size: 50px;
+     position: absolute;
+     top: 270px;
+     left: 500px;
+     font-weight: 200;
+     color: aquamarine;
+ }
