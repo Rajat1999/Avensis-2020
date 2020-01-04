@@ -173,7 +173,7 @@ h1 {
     height: 0.1rem;
     background: linear-gradient(90deg, #CD6F8A 10%, #ED8F38 90%);
     left: 25%;
-    top: 32%;
+    top: 35%;
 }
 
 .video {
@@ -256,8 +256,15 @@ h1 {
     text-align: center;
 }
 
-#events .event-header h1 {
+#events .events-header  {
+    position: relative;
     text-align: center;
+    justify-content: center;
+    background: #a82124;
+    border-bottom: solid 4px #ED8F38;
+    opacity: 0.9;
+    height: 20%;
+    width: 100%;
 }
 
 #events .events-content {
@@ -293,10 +300,15 @@ h1 {
     background: #060510;
 }
 
-#team h1 {
-    width: 100%;
-    color: #fff;
+#team .team-header {
+    position: relative;
     text-align: center;
+    justify-content: center;
+    background: #a82124;
+    border-bottom: solid 4px #ED8F38;
+    opacity: 0.9;
+    height: 20%;
+    width: 100%;
 }
 
 #team .team-content {
@@ -323,13 +335,13 @@ h1 {
 }
 
 #team .co .Card {
-    width: 50%;
-    flex-direction: row;
+    width: 25%;
+    /* flex-direction: row; */
     height: auto;
 }
 
 #team .ca .Card {
-    width: 50%;
+    width: 25%;
     flex-direction: row;
     height: auto;
 }

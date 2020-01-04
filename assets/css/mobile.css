@@ -39,7 +39,7 @@
     }
 
     .main-heading::after {
-        top: 72%;
+        top: 75%;
         left: 34.5%;
         width: 30%;
         margin: 0;
@@ -56,8 +56,8 @@
 
     .about-header {
         position: absolute;
-        top: 120%;   left: 50%;
-        transform: translate(-50%, -50%);
+        /* top: 120%;   left: 50%;
+        transform: translate(-50%, -50%); */
     }
     .about-content {
         position: absolute;
@@ -134,15 +134,22 @@
         background: #060510;
     }
 
-    #team h1 {
-        width: 100%;
-        color: #fff;
+    #team .team-header {
+        display: block;
+        position: relative;
         text-align: center;
+        justify-content: center;
+        background: #a82124;
+        border-bottom: solid 4px #ED8F38;
+        opacity: 0.9;
+        height: 20%;
+        width: 100%;
     }
 
     #team .team-content {
         display: flex;
         height: 100%;
+        overflow: auto;
     }
 
     #team .ca {
@@ -150,22 +157,27 @@
         flex-wrap: wrap;
         -ms-flex-align: center;
         justify-content: space-around;
-        width: 50%;
+        overflow: auto;
+        width: 45%;
+        margin-right: 5%;
     }
 
     #team .co {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        width: 50%;
+        overflow: auto;
+        width: 45%;
+        margin-left: 5%;
     }
 
     #team .co .Card {
-        width: 20%;
+        width: 22%;
     }
 
     #team .ca .Card {
-        width: 20%;
+        margin: 0;
+        width: 22%;
     }
 
     #team .ca,
