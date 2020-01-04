@@ -103,7 +103,7 @@
         width: 100vw;
         height: 100vh;
         display: flex;
-        float: left;
+        flex-wrap: wrap;
         text-align: center;
         align-items: center;
         justify-content: space-evenly;
@@ -112,13 +112,14 @@
     #events .events-content .poster {
         position: relative;
         text-align: center;
-        width: 50vw;
+        align-items: center;
+        width: 50%;
         height: 50%;
         cursor: pointer;
         text-decoration: none;
     }
 
-    #events .events-content .poster h3 {
+    #events .events-content  .poster h3 {
         text-align: center;
     }
 
