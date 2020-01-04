@@ -260,19 +260,19 @@ body {
 }
 
 .call_of_duty1 {
-    background: url('../img/technical/gaming/cod.png');
+    background: url('/assets/img/tech/game/cod.png');
 }
 
 .pubg1 {
-    background: url('../img/technical/gaming/pubg.png');
+    background: url('/assets/img/tech/game/pubg.png');
 }
 
 .nfs1 {
-    background: url('../img/technical/gaming/nfs.jpg');
+    background: url('/assets/img/tech/game/nfs.jpg');
 }
 
 .csgo1 {
-    background: url('../img/technical/gaming/csgo.png');
+    background: url('/assets/img/tech/game/csgo.png');
 }
 
 .fifa1 {
@@ -284,95 +284,95 @@ body {
 }
 
 .hack_the_web1 {
-    background: url('../img/technical/coding/hack_the_web.png');
+    background: url('/assets/img/tech/code/hack_the_web.png');
 }
 
 .codify1 {
-    background: url('../img/technical/coding/codify.png');
+    background: url('/assets/img/tech/code/codify.png');
 }
 
 .blind1 {
-    background: url('../img/technical/coding/blind _code.jpg');
+    background: url('/assets/img/tech/code/blind\ _code.jpg');
 }
 
 .brocode1 {
-    background: url('../img/technical/coding/bro_code.jpg');
+    background: url('/assets/img/tech/code/bro_code.jpg');
 }
 
 .shuffle1 {
-    background: url('../img/technical/coding/code_shuffle.jpg');
+    background: url('/assets/img/tech/code/code_shuffle.jpg');
 }
 
 .hackathon1 {
-    background: url('../img/technical/coding/hack.jpg');
+    background: url('/assets/img/tech/code/hack.jpg');
 }
 
 .war1 {
-    background: url('../img/robotics/robowars.png');
+    background: url('/assets/img/robo/robowars.png');
 }
 
 .rugby1 {
-    background: url('../img/robotics/roborugby.png');
+    background: url('/assets/img/robo/roborugby.png');
 }
 
 .carnage1 {
-    background: url('../img/robotics/carnage.png');
+    background: url('/assets/img/robo/carnage.png');
 }
 
 .world1 {
-    background: url('../img/robotics/robo_world.png');
+    background: url('/assets/img/robo/robo_world.png');
 }
 
 .line1 {
-    background: url('../img/robotics/lfr.png');
+    background: url('/assets/img/robo/lfr.png');
 }
 
 .maze1 {
-    background: url('../img/robotics/robomaze.png');
+    background: url('/assets/img/robo/robomaze.png');
 }
 
 .mind1 {
-    background: url('/assets/img/FNC/mind_the_mines.png');
+    background: url('/assets/img/fnc/mind_the_mines.png');
 }
 
 .dawat1 {
-    background: url('/assets/img/FNC/dawat_e_khel.jpg');
+    background: url('/assets/img/fnc/dawat_e_khel.jpg');
 }
 
 .gully1 {
-    background: url('/assets/img/FNC/gully_cricket.jpg');
+    background: url('/assets/img/fnc/gully_cricket.jpg');
 }
 
 .trove1 {
-    background: url('/assets/img/FNC/treasure_hunt.jpg');
+    background: url('/assets/img/fnc/treasure_hunt.jpg');
 }
 
 .veter1 {
-    background: url('/assets/img/FNC/veteran_showdown.jpg');
+    background: url('/assets/img/fnc/veteran_showdown.jpg');
 }
 
 .memer1 {
-    background: url('/assets/img/FNC/bollywood_unplugged.jpg');
+    background: url('/assets/img/fnc/bollywood_unplugged.jpg');
 }
 
 .face1 {
-    background: url('../img/lit/Optimized-face_the_mask.jpg');
+    background: url('/assets/img/liq/Optimized-face_the_mask.jpg');
 }
 
 .sike1 {
-    background: url('../img/lit/Optimized-Sike\ The\ Psych\ WITHOUT.jpg');
+    background: url('/assets/img/liq/Optimized-Sike\ The\ Psych\ WITHOUT.jpg');
 }
 
 .quiz1 {
-    background: url('../img/lit/Optimized-BizTech\ WITHOUT.jpg');
+    background: url('/assets/img/liq/Optimized-BizTech\ WITHOUT.jpg');
 }
 
 .pop1 {
-    background: url('../img/lit/Optimized-pop_quiz.jpg');
+    background: url('/assets/img/liq/Optimized-pop_quiz.jpg');
 }
 
 .tape1 {
-    background: url('../img/lit/Optimized-tape_a_tale.jpg');
+    background: url('/assets/img/liq/Optimized-tape_a_tale.jpg');
 }
 
 .full {
