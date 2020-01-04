@@ -1,8 +1,9 @@
  
  @import "/assets/css/particleEffect.css";
  @import "/assets/css/mobile.css";
- @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Livvic&display=swap');
  @import url('https://fonts.googleapis.com/css?family=Rancho&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
  
  /* ============================================||   Base Styling  ||============================================ */
 
@@ -10,12 +11,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Livvic',
+    sans-serif;
 }
 
 body {
     height: 100vh;
     width: 100%;
-    font-family: 'Roboto Condensed',
+    font-family: 'Livvic',
     sans-serif;
     background-color: #060510;
     /* font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif; */
@@ -24,6 +27,10 @@ body {
     line-height: 1.6;
     align-items: center;
     text-align: center;
+}
+
+.dash {
+    color: orange;
 }
 
 h1 {
@@ -111,8 +118,33 @@ h1 {
  /* ============================================||   Header Styling  ||============================================ */
 
 .logo {
-    width: 40%;
+    width: 35%;
     padding: 10% 0 0 0;
+}
+.main-heading {
+    font-family: 'Rancho',
+        cursive;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 10%;
+    font-size: 3.5rem;
+    padding: 1% 0 0 0;
+    text-shadow: 0 0 20px #ff005b;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7),
+        0px 0px 6px rgba(255, 255, 255, 0.7),
+}
+
+.main-heading::after {
+    content: '';
+    position: absolute;
+    margin-top: 1.1rem;
+    border-radius: 1rem;
+    display: block;
+    width: 50%;
+    height: 0.1rem;
+    background: linear-gradient(90deg, #CD6F8A 10%, #ED8F38 90%);
+    left: 25%;
+    top: 35%;
 }
 
  .header-content {
@@ -129,51 +161,91 @@ h1 {
     box-shadow: 0px 25px 45px 5px rgba(0, 0, 0, 0.5); */
 }
 
+.header-content .tagline {
+    font-family: 'Satisfy',
+    cursive;
+}
+
 .header-content a {
-    padding: 10px;
-    margin: 20% 0 0 0;
-    border-radius: 15px;
-    color: #f5f5f5;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
     text-decoration: none;
-    border: 1px solid #f5f5f5;
+    font-size: 1.5rem;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.header-content a:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3,
+                0 0 40px #2196f3,
+                0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+.header-content a span {
+    position: absolute;
+    display: block;
+}
+
+.header-content a  span:nth-child(1) {
+    top: 0; left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+.header-content a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.header-content a  span:nth-child(3) {
+    bottom: 0; right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+.header-content a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.header-content a  span:nth-child(2) {
+    top: -100%; right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+.header-content a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.header-content a  span:nth-child(4) {
+    bottom: -100%; left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+.header-content a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
 }
 
 .header-content p {
     margin-bottom: 10%;
-}
-
-.header-content a:hover {
-    background: #f5f5f5;
-    opacity: 0.6;
-    transition: 0.5s;
-    color: #000;
-    text-decoration: none;
-}
-
-.main-heading {
-    font-family: 'Rancho',
-    cursive;
-    font-weight: 900;
-    color: #fff;
-    margin-bottom: 10%;
-    font-size: 3.5rem;
-    padding: 1% 0 0 0;
-    text-shadow: 0 0 20px #ff005b;
-    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7),
-                 0px 0px 6px rgba(255, 255, 255, 0.7),
-}
-
-.main-heading::after {
-    content: '';
-    position: absolute;
-    margin-top: 1.1rem;
-    border-radius: 1rem;
-    display: block;
-    width: 50%;
-    height: 0.1rem;
-    background: linear-gradient(90deg, #CD6F8A 10%, #ED8F38 90%);
-    left: 25%;
-    top: 35%;
 }
 
 .video {
@@ -420,13 +492,13 @@ h1 {
 
 
 #team .ca .ca-1 {
-    background-image: url("/assets/img/CA/Ankit_Sangwan.jpg");
+    background-image: url("/assets/img/CA/SHIVANGI\ JAIN.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 #team .ca .ca-2 {
-    background-image: url("/assets/img/CA/Ankush\ Garg.JPG");
+    background-image: url("/assets/img/CA/Sanidhya_Parashar.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -438,7 +510,7 @@ h1 {
     background-repeat: no-repeat;
 }
 #team .ca .ca-4 {
-    background-image: url("/assets/img/CA/Khushboo_Singhal.jpg");
+    background-image: url("/assets/img/CA/Ankush\ Garg.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -450,7 +522,7 @@ h1 {
     background-repeat: no-repeat;
 }
 #team .ca .ca-6 {
-    background-image: url("/assets/img/CA/Nikita_Mittal.JPG");
+    background-image: url("/assets/img/CA/Shivam\ garg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -462,25 +534,31 @@ h1 {
     background-repeat: no-repeat;
 }
 #team .ca .ca-8 {
-    background-image: url("/assets/img/CA/Sanidhya_Parashar.jpg");
+    background-image: url("/assets/img/CA/Nikita_Mittal.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 #team .ca .ca-9 {
-    background-image: url("/assets/img/CA/Shivam\ garg.jpg");
+    background-image: url("/assets/img/CA/Tanvi\ Malhotra.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 #team .ca .ca-10 {
-    background-image: url("/assets/img/CA/SHIVANGI\ JAIN.jpg");
+    background-image: url("/assets/img/CA/Lakshita_nagpal.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 #team .ca .ca-11 {
-    background-image: url("/assets/img/CA/Tanvi\ Malhotra.jpg");
+    background-image: url("/assets/img/CA/Khushboo_Singhal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .ca .ca-12 {
+    background-image: url("/assets/img/CA/Ankit_Sangwan.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
