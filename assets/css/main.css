@@ -43,6 +43,10 @@ h1 {
     color: #f09a48;
 }
 
+.blue {
+    color: #2196f3;
+}
+
 
 
  /* ============================================||   Menu Styling  ||============================================ */
@@ -144,7 +148,7 @@ h1 {
     height: 0.1rem;
     background: linear-gradient(90deg, #CD6F8A 10%, #ED8F38 90%);
     left: 25%;
-    top: 35%;
+    top: 32%;
 }
 
  .header-content {
@@ -353,8 +357,8 @@ h1 {
     width: 100%;
     height: 20%;
     cursor: pointer;
-    border: 2px solid red;
     text-decoration: none;
+    border: 2px solid #a82124;
 }
 
 #events .events-content .poster h3 {

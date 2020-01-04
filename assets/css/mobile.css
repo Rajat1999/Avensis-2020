@@ -32,6 +32,20 @@
         font-size: 1.8rem;
     }
 
+    .header-content .tagline {
+        margin-top: 2%;
+        font-size: 1.4rem;
+    }
+
+    .header-content h5 {
+        margin-top: 3%;
+        font-size: 1.6rem;
+    }
+
+    .header-content a {
+        margin-top: 4%;
+    }
+
     .main-heading {
         margin-bottom: 0;
         font-size: 5rem;
@@ -39,10 +53,10 @@
     }
 
     .main-heading::after {
-        top: 75%;
-        left: 34.5%;
+        top: 65%;
+        left: 35%;
         width: 30%;
-        margin: 0;
+        margin: 0 auto;
 
     }
 

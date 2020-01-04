@@ -21,6 +21,8 @@
 
  #particles-js {
 
+    position: absolute;
+    z-index: 1;
      height: 100vh;
      opacity: 0.6;
      background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0));
