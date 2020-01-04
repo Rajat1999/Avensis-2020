@@ -46,7 +46,7 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(136, 136, 136, 0.969);
+    background: rgb(168, 33, 36, 0.969);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,7 +102,7 @@ h1 {
 }
 
 #toggle-icon.active {
-    background: rgba(136, 136, 136, 0.2) url("/assets/img/close.png");
+    background: rgb(168, 33, 36, 0.969) url("/assets/img/close.png");
 }
 
 
@@ -293,10 +293,13 @@ h1 {
 /* ============================================||   Team Section Styling  ||============================================ */
 
 #team {
+    position: relative;
     height: 100vh;
     width: 100%;
     color: #fff;
     display: block;
+    overflow-y: auto;
+    /* overflow-wrap: break-word; */
     background: #060510;
 }
 
