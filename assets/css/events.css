@@ -1,0 +1,451 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #1b141a;
+    justify-content: center;
+    align-content: center;
+}
+
+.hei {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.head {
+    position: relative;
+    padding: 15px 30px;
+    color: #2196f3;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.head:hover {
+    color: #2196f3;
+    text-decoration: none;
+}
+
+.head svg,
+.head svg rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    text-decoration: none;
+}
+
+.head svg rect {
+    stroke-width: 3;
+    stroke: #2196f3;
+    stroke-dasharray: 100;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        stroke-dashoffset: 400;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.gaming {
+    position: relative;
+    margin: 20px 0 0;
+    margin-bottom: 15px;
+    width: 130px;
+    height: 40px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 3px;
+    display: inline-block;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #e91e63, #5d02ff);
+}
+
+.gaming p {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    font-size: 15px;
+    opacity: 0.8;
+    transition: 0.2s;
+    transform: translate(-50%, -47%);
+}
+
+.gaming:hover p {
+    font-size: 16px;
+    opacity: 1;
+    /* transform: translate(-50%) */
+}
+
+.gaming:before,
+.gaming:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #e91e63, #5d02ff);
+    filter: blur(20px);
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.gaming:after {
+    filter: blur(30px);
+}
+
+.gaming:hover:before,
+.gaming:hover:after {
+    opacity: 1;
+}
+
+.collage {
+    margin-bottom: 30px;
+}
+
+.row {
+    justify-content: center;
+    align-items: center;
+}
+
+.row .back {
+    position: relative;
+    margin: 10px 0;
+    padding: 15px;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 210px;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.row .back:hover {
+    border: 4px solid #5d02ff;
+}
+
+.row:nth-child(1) .back {
+    background: linear-gradient(45deg, #ff0057, #e64a19);
+}
+
+.row:nth-child(2) .back {
+    background: linear-gradient(45deg, #89ff00, #00bcd4);
+}
+
+.row:nth-child(3) .back {
+    background: linear-gradient(45deg, #e91e63, #5d02ff);
+}
+
+.row:nth-child(4) .back {
+    background: linear-gradient(45deg, #ff0000, #ffc107);
+}
+
+.row:nth-child(5) .back {
+    background: linear-gradient(45deg, #ff0057, #e64a19);
+}
+
+.row:nth-child(6) .back {
+    background: linear-gradient(45deg, #89ff00, #00bcd4);
+}
+
+.back .image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 96%;
+    height: 93%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+
+.back .content {
+    position: absolute;
+    margin: 0;
+    color: #fff;
+    width: 100%;
+    background: linear-gradient(180deg, transparent, #654321, #654321, #654321);
+    left: 0;
+    bottom: -10px;
+    font-weight: bold;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.row:nth-child(1) .back .content {
+    background: linear-gradient(180deg, transparent, #5d02ff, #5d02ff);
+}
+
+.row:nth-child(2) .back .content {
+    background: linear-gradient(180deg, transparent, #89ff00, #00bcd4);
+}
+
+.row:nth-child(3) .back .content {
+    background: linear-gradient(180deg, transparent, #e91e63, #5d02ff);
+}
+
+.row:nth-child(4) .back .content {
+    background: linear-gradient(180deg, transparent, #ff0000, #ffc107);
+}
+
+.row:nth-child(5) .back .content {
+    background: linear-gradient(180deg, transparent, #ff0057, #e64a19);
+}
+
+.row:nth-child(6) .back .content {
+    background: linear-gradient(180deg, transparent, #89ff00, #00bcd4);
+}
+
+.row:nth-child(7) .back .content {
+    background: linear-gradient(180deg, transparent, #e91e63, #5d02ff);
+}
+
+.row:nth-child(8) .back .content {
+    background: linear-gradient(180deg, transparent, #ff0000, #ffc107);
+}
+
+.back:hover .content {
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.back .content h4 {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.back .content p {
+    margin: auto 10px;
+    margin-bottom: 10px;
+}
+
+.back:hover .image {
+    width: 100%;
+    height: 100%;
+}
+
+/* .banner{
+    height: 0;
+    display: none;
+}
+.dept{
+    display: block;
+} */
+.bg {
+    position: fixed;
+    min-height: 100vh;
+    width: 100%;
+    /* background: url('C:/Users/Akshat Gupta/Desktop/avensis web/pics/codify.png'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.call_of_duty1 {
+    background: url('../img/technical/gaming/cod.png');
+}
+
+.pubg1 {
+    background: url('../img/technical/gaming/pubg.png');
+}
+
+.nfs1 {
+    background: url('../img/technical/gaming/nfs.jpg');
+}
+
+.csgo1 {
+    background: url('../img/technical/gaming/csgo.png');
+}
+
+.fifa1 {
+    background: url('../img/technical/gaming/.png');
+}
+
+.mortal1 {
+    background: url('../img/technical/gaming/.png');
+}
+
+.hack_the_web1 {
+    background: url('../img/technical/coding/hack_the_web.png');
+}
+
+.codify1 {
+    background: url('../img/technical/coding/codify.png');
+}
+
+.blind1 {
+    background: url('../img/technical/coding/blind _code.jpg');
+}
+
+.brocode1 {
+    background: url('../img/technical/coding/bro_code.jpg');
+}
+
+.shuffle1 {
+    background: url('../img/technical/coding/code_shuffle.jpg');
+}
+
+.hackathon1 {
+    background: url('../img/technical/coding/hack.jpg');
+}
+
+.war1 {
+    background: url('../img/robotics/robowars.png');
+}
+
+.rugby1 {
+    background: url('../img/robotics/roborugby.png');
+}
+
+.carnage1 {
+    background: url('../img/robotics/carnage.png');
+}
+
+.world1 {
+    background: url('../img/robotics/robo_world.png');
+}
+
+.line1 {
+    background: url('../img/robotics/lfr.png');
+}
+
+.maze1 {
+    background: url('../img/robotics/robomaze.png');
+}
+
+.mind1 {
+    background: url('/assets/img/FNC/mind_the_mines.png');
+}
+
+.dawat1 {
+    background: url('/assets/img/FNC/dawat_e_khel.jpg');
+}
+
+.gully1 {
+    background: url('/assets/img/FNC/gully_cricket.jpg');
+}
+
+.trove1 {
+    background: url('/assets/img/FNC/treasure_hunt.jpg');
+}
+
+.veter1 {
+    background: url('/assets/img/FNC/veteran_showdown.jpg');
+}
+
+.memer1 {
+    background: url('/assets/img/FNC/bollywood_unplugged.jpg');
+}
+
+.face1 {
+    background: url('../img/lit/Optimized-face_the_mask.jpg');
+}
+
+.sike1 {
+    background: url('../img/lit/Optimized-Sike\ The\ Psych\ WITHOUT.jpg');
+}
+
+.quiz1 {
+    background: url('../img/lit/Optimized-BizTech\ WITHOUT.jpg');
+}
+
+.pop1 {
+    background: url('../img/lit/Optimized-pop_quiz.jpg');
+}
+
+.tape1 {
+    background: url('../img/lit/Optimized-tape_a_tale.jpg');
+}
+
+.full {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+.full .first h3 {
+    font-weight: bold;
+}
+
+.full .first p {
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.full .first {
+    margin-bottom: 100px;
+}
+
+.full .first:hover h3,
+.full .first:hover p {
+    background: -webkit-linear-gradient(180deg, #0f0 70%, #f00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.full .second h4 {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.full .second p,
+.full .second ul li {
+    font-size: 15px;
+}
+
+.rule {
+    margin-bottom: 90px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.closeBtn {
+    position: fixed;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    text-decoration: none;
+    color: #ddd;
+    font-size: 60px;
+}
+
+.closeBtn h2 {
+    font-size: 60px;
+}
+
+.closeBtn:hover {
+    text-decoration: none;
+    color: #0000ff;
+}
