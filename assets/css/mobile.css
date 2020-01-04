@@ -100,42 +100,21 @@
 
     /* ============================================||   Events Section Styling  ||============================================ */
 
-    #events {
-        width: 100%;
-        height: 100vh;
-        color: #fff;
-        display: block;
-        background: #060510;
-        text-align: center;
-    }
+   #events .events-content a .poster {
+       display: flex;
+       float: left;
+       width: 50%;
+       height: 50%;
+   }
 
-    #events .event-header h1 {
-        text-align: center;
-    }
+   #events .events-content a .poster h3 {
+       display: none;
+   }
 
-    #events .events-content {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    #events .events-content .poster {
-        position: relative;
-        text-align: center;
-        align-items: center;
-        width: 50%;
-        height: 50%;
-        cursor: pointer;
-        text-decoration: none;
-    }
-
-    #events .events-content  .poster h3 {
-        text-align: center;
-    }
+   #events .events-content a .poster:hover h3 {
+       display: block;
+       transition: 0.8s;
+   }
 
 
 
@@ -218,5 +197,3 @@
     }
 
 }
-
-/*  */

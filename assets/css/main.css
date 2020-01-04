@@ -47,6 +47,10 @@ h1 {
     color: #2196f3;
 }
 
+.white {
+    color: #fff;
+}
+
 
 
  /* ============================================||   Menu Styling  ||============================================ */
@@ -351,30 +355,22 @@ h1 {
     align-items: center;
 }
 
-#events .events-content .poster {
+#events .events-content a .poster {
     position: relative;
     text-align: center;
+    cursor: pointer;
     width: 100%;
     height: 20%;
-    cursor: pointer;
     text-decoration: none;
     border: 2px solid #a82124;
 }
 
-#events .events-content .poster h3 {
-    text-align: center;
-}
-
-#events .events-content .poster a {
+#events .events-content a .poster h3 {
     color: #fff;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
     text-decoration: none;
-    transition: 0.5s;
-    text-shadow: 0 0 20px #ff005b;
-    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7),
-    0px 0px 6px rgba(255, 255, 255, 0.7),
-}
-#events .events-content .poster:hover a {
-    transform: scale(1.1);
+    text-shadow: 0 10px 40px #000;
 }
 
 #events .events-content .poster .technical, .robotics, .l-n-q, .f-n-c {
@@ -682,3 +678,8 @@ h1 {
     display: block;
     background: #060510;
 }
+
+
+
+/* ============================================||   Animations  ||============================================ */
+
