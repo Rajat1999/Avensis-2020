@@ -1,5 +1,6 @@
  
  @import "/assets/css/particleEffect.css";
+ @import "/assets/css/mobile.css";
  @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
  @import url('https://fonts.googleapis.com/css?family=Rancho&display=swap');
  
@@ -52,6 +53,7 @@ h1 {
     overflow-y: auto;
     transform: scale(0);
     transition: 0.3s;
+    z-index: 20;
 }
 
 #menu-overlay.active {
@@ -93,7 +95,7 @@ h1 {
     height: 50px;
     border-radius: 5px;
     background: rgba(136, 136, 136, 0.2) url("/assets/img/open.png");
-    z-index: 1;
+    z-index: 30;
     cursor: pointer;
 }
 
@@ -120,9 +122,9 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    -webkit-box-shadow: 0px 25px 45px 5px rgba(0, 0, 0, 0.5);
+    /* -webkit-box-shadow: 0px 25px 45px 5px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 25px 45px 5px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 25px 45px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 25px 45px 5px rgba(0, 0, 0, 0.5); */
 }
 
 .header-content a {
@@ -174,7 +176,7 @@ h1 {
 
 .video {
     height: 100%;
-    z-index: -1;
+    z-index: 1;
     background-attachment: fixed;
 }
 
@@ -223,7 +225,7 @@ h1 {
     padding: 10%;
     max-width: 500px;
     background: #060c21;
-    opacity: 0.9;
+    opacity: 0.8;
     color: #fff;
     justify-content: center;
     align-items: center;
@@ -232,68 +234,298 @@ h1 {
 
 
 
+/* ============================================||   Events Section Styling  ||============================================ */
+
+#events {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    display: block;
+    background: #060510;
+    text-align: center;
+}
+
+#events .event-header h1 {
+    text-align: center;
+}
+
+#events .events-content {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+
+#events .events-content .poster {
+    position: relative;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#events .events-content .poster h3 {
+    text-align: center;
+}
+
+
 
 /* ============================================||   Team Section Styling  ||============================================ */
 
 #team {
-    height: 100vh;
-    background: #060510
+    height: 200vh;
+    width: 100%;
+    color: #fff;
+    display: block;
+    background: #060510;
 }
 
-#team h2 {
+#team h1 {
     width: 100%;
     color: #fff;
     text-align: center;
 }
 
-#team .ca .Card .front img {
+#team .team-content {
+    display: block;
+    height: 100%;
+}
+
+#team .ca {
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    justify-content: space-around;
     width: 100%;
+}
+
+#team .co {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    width: 100%;
+}
+
+#team .co .Card {
+    width: 50%;
+    flex-direction: row;
+    height: auto;
 }
 
 #team .ca .Card {
+    width: 50%;
+    flex-direction: row;
+    height: auto;
+}
+
+#team .ca, .co .Card .data {
     position: relative;
-    max-width: 30%;
-    max-height: 25%;
-    transform-style: preserve-3d;
-    perspective: 600px;
-    transition: 0.5s;
-}
-
-#team .ca .Card .front {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    backface-visibility: hidden;
-    transform: rotateX(0deg);
-    transition: 0.5s;
-}
-
-#team .ca .Card:hover .front {
-    transform: rotateX(-180deg);
-}
-
-#team .ca .Card .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    font-size: 0.5rem;
-    backface-visibility: hidden;
-    transform: rotateX(180deg);
-    transition: 0.5s;
-}
-
-#team .ca .Card:hover .back {
-    transform: rotateX(0deg);
-}
-
-#team .ca .Card .back .details {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
     text-align: center;
-    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
 
+#team .co,.co .Card .data {
+   position: relative;
+   text-align: center;
+   height: 100%;
+   width: 100%;
+}
+
+#team .Card .data {
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+#team .Card:hover .data {
+    visibility: visible;
+    width: 100%;    height: 100%;
+    background-color: rgba(0, 0, 0, 0.92);
+}
+
+
+
+#team .ca .ca-1 {
+    background-image: url("/assets/img/CA/Ankit_Sangwan.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .ca .ca-2 {
+    background-image: url("/assets/img/CA/Ankush\ Garg.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .ca .ca-3 {
+    background-image: url("/assets/img/CA/Brayan\ Abraham.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .ca .ca-4 {
+    background-image: url("/assets/img/CA/Khushboo_Singhal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .ca .ca-5 {
+    background-image: url("/assets/img/CA/Lakshita_nagpal.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .ca .ca-6 {
+    background-image: url("/assets/img/CA/Nikita_Mittal.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .ca .ca-7 {
+    background-image: url("/assets/img/CA/Samar_Laroia.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .ca .ca-8 {
+    background-image: url("/assets/img/CA/Sanidhya_Parashar.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .ca .ca-9 {
+    background-image: url("/assets/img/CA/Shivam\ garg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .ca .ca-10 {
+    background-image: url("/assets/img/CA/SHIVANGI\ JAIN.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .ca .ca-11 {
+    background-image: url("/assets/img/CA/Tanvi\ Malhotra.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+#team .co .co-1 {
+    background-image: url("/assets/img/CO/Abhay_FNC.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .co .co-2 {
+    background-image: url("/assets/img/CO/Abhishek\ publicity\ co.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .co .co-3 {
+    background-image: url("/assets/img/CO/Akshat_Technical.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .co .co-4 {
+    background-image: url("/assets/img/CO/Amandeep_internal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .co .co-5 {
+    background-image: url("/assets/img/CO/Chirag_Robotics.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .co .co-6 {
+    background-image: url("/assets/img/CO/Kirti.\ Internal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .co .co-7 {
+    background-image: url("/assets/img/CO/Mandeep_FnC.HEIC");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .co .co-8 {
+    background-image: url("/assets/img/CO/Mohit_Techincal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .co .co-9 {
+    background-image: url("/assets/img/CO/Sahil_\ FNC.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .co .co-10 {
+    background-image: url("/assets/img/CO/Samriddhi_Robotics.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .co .co-11 {
+    background-image: url("/assets/img/CO/Sonakshi\ Malhotra_Sponsorship.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .co .co-12 {
+    background-image: url("/assets/img/CO/Tanmay_literaryandquiz.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .co .co-13 {
+    background-image: url("/assets/img/CO/Tanmoy\ design\ CO.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .co .co-14 {
+    background-image: url("/assets/img/CO/V\ Sree\ Lalitha_Literary\ &\ Quiz.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .co .co-15 {
+    background-image: url("/assets/img/CO/Vaibhav\ Bhasin_Robotics.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .co .co-16 {
+    background-image: url("/assets/img/CO/Varnika_creativity.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+/* ============================================||   Sponsor Section Styling  ||============================================ */
+
+
+#sponsor {
+    position: absolute;
+    top: 798%;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    display: block;
+    background: #060510;
 }
