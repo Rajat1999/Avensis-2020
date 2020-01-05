@@ -677,12 +677,70 @@ h1 {
 
 #sponsor {
     position: relative;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     color: #fff;
     display: block;
     background: #060510;
 }
+
+#sponsor .sponsor-header {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    background: #a82124;
+    border-bottom: solid 4px #ED8F38;
+    opacity: 0.9;
+    height: 20%;
+    width: 100%;
+}
+
+#sponsor .sponsor-content button {
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+
+}
+
+#sponsor .sponsor-content .sponsor {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center ;
+    width: 50%;
+    height: 30%;
+    float: left;
+    /* border-radius: 50%; */
+    /* margin: 5%; */
+    box-shadow: #0000009a 0px 20px 30px;
+}
+
+#sponsor .sponsor-content .sponsor img {
+    width: 100%;
+    /* border-radius: 50%; */
+}
+
+#sponsor .sponsor-content .s1 img {
+    display: block;
+    border-radius: none;
+    width: 100%;
+}
+
+#sponsor .sponsor-content .s14 img {
+    display: block;
+    border-radius: none;
+    width: 100%;
+}
+#sponsor .sponsor-content .credits {
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 10%;
+    width: 100%;
+    height: 20%;
+}
+
+
 
 
 
