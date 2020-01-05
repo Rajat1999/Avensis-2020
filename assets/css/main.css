@@ -453,7 +453,7 @@ h1 {
 }
 
 #team .co .Card {
-    width: 25%;
+    width: 20%;
     /* flex-direction: row; */
     height: auto;
 }
@@ -598,7 +598,7 @@ h1 {
     background-repeat: no-repeat;
 }
 #team .co .co-6 {
-    background-image: url("/assets/img/CO/Mohit_Techincal.jpg");
+    background-image: url("/assets/img/CO/Chirag_Robotics.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -610,7 +610,7 @@ h1 {
     background-repeat: no-repeat;
 }
 #team .co .co-8 {
-    background-image: url("/assets/img/CO/Chirag_Robotics.jpg");
+    background-image: url("/assets/img/CO/Mohit_Techincal.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -628,7 +628,7 @@ h1 {
     background-repeat: no-repeat;
 }
 #team .co .co-11 {
-    background-image: url("/assets/img/CO/Sonakshi\ Malhotra_Sponsorship.jpeg");
+    background-image: url("/assets/img/CO/Drishti\ Spons_Publicity\ CO.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -659,6 +659,12 @@ h1 {
 }
 #team .co .co-16 {
     background-image: url("/assets/img/CO/Varnika_creativity.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#team .co .co-17 {
+    background-image: url("/assets/img/CO/Saloni_technical.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
