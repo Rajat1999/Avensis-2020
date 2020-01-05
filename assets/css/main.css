@@ -670,8 +670,7 @@ h1 {
 
 
 #sponsor {
-    position: absolute;
-    top: 798%;
+    position: relative;
     height: 100vh;
     width: 100%;
     color: #fff;
