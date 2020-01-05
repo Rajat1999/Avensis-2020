@@ -188,65 +188,53 @@
         width: 100%;
     }
 
+
+
     /* ============================================||   Sponsor Section Styling  ||============================================ */
-
-
-    #sponsor {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        color: #fff;
-        display: block;
-        background: #060510;
-    }
-
-    #sponsor .sponsor-header {
-        position: relative;
-        text-align: center;
-        justify-content: center;
-        background: #a82124;
-        border-bottom: solid 4px #ED8F38;
-        opacity: 0.9;
-        height: 20%;
-        width: 100%;
-    }
-
-    #sponsor .sponsor-content button {
-        position: sticky;
-        top: 0%;
-        z-index: 2;
-
-    }
 
     #sponsor .sponsor-content .sponsor {
         justify-content: center;
         align-items: center;
-        
+        width: 10%;
+        height: 10%;
+        margin: 2%;
+        border-radius: 50%; 
+    }
+
+    #sponsor .sponsor-content .sponsor:hover {
+        transform: rotate(360deg);
+        transition: 1.5s;
     }
 
     #sponsor .sponsor-content .sponsor img {
-        width: 20%;
-        box-shadow: #0000009a 0px 10px 20px;
-        /* border-radius: 50%; */
+        border-radius: 50%;
+        box-shadow: none;
     }
 
     #sponsor .sponsor-content .s1 img {
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        border-radius: none;
+        margin-left: 40%;
         width: 20%;
+        height: 10%;
+        border-radius: 10px;
     }
 
     #sponsor .sponsor-content .s14 img {
         display: block;
-        border-radius: none;
         width: 20%;
-        height: 10%
+        height: 10%;
+        border-radius: 10px;
     }
 
     #sponsor .sponsor-content .credits {
         padding: 5%;
+    }
+
+    #sponsor .sponsor-content .credits button {
+        position: relative;
+        top: 100%;
+        width: 10%;
+        height: 100%;
+        z-index: 2;
     }
 
 

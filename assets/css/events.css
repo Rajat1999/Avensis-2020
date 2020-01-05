@@ -276,11 +276,11 @@ body {
 }
 
 .fifa1 {
-    background: url('../img/technical/gaming/.png');
+    background: url('/assets/img/tech/game/fifa.jpeg');
 }
 
 .mortal1 {
-    background: url('../img/technical/gaming/.png');
+    background: url('/assets/img/tech/game/mortalKombat.jpeg');
 }
 
 .hack_the_web1 {
@@ -360,11 +360,11 @@ body {
 }
 
 .sike1 {
-    background: url('/assets/img/liq/Optimized-Sike\ The\ Psych\ WITHOUT-min.jpg.jpg');
+    background: url('/assets/img/liq/Optimized-Sike\ The\ Psych\ WITHOUT-min.jpg');
 }
 
 .quiz1 {
-    background: url('/assets/img/liq/Optimized-BizTech\ WITHOUT-min.jpg.jpg');
+    background: url('/assets/img/liq/Optimized-BizTech\ WITHOUT-min.jpg');
 }
 
 .pop1 {
